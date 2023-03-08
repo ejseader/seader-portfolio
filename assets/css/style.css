@@ -21,6 +21,10 @@ body {
     background-color: #86bbd8;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -101,6 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding-top: 2%;
 }
 
 section {
@@ -173,117 +178,112 @@ section h1 {
     margin-top: 2%;
 }
 
+.img-wrapper-lg {
+    display: flex;
+}
+
+.img-wrapper-lg > a {
+    flex: 1;
+}
+
 .surf-report {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/surfing-gdfe5085a3_1280.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
     
 }
 
-.surf-report img {
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-}
-
-.surf-report img:hover {
-    opacity: .9;
-}
-
 .surf-report-title {
-    position: absolute;
-    bottom: 6%;
-    left: 1%;
-    background-color: #777;
-    border: 2px solid black;
     padding: .5%;
     text-align: center;
     font-size: .8rem;
 }
 
 .surf-report-title h3 {
-    color: #fff;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.led-wall {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.img-wrapper {
+    display: flex;
+}
+
+.img-wrapper > a {
     flex: 1;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
-.led-wall img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    object-position: center center;
-    opacity: .5;
-}
-
-.led-wall img:hover {
-    opacity: 1;
+.led-wall {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/led_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
 }
 
 .led-wall-title {
-    position: absolute;
-    bottom: 7%;
-    left: 1%;
-    background-color: #777;
-    border: 2px solid black;
     padding: .5%;
     text-align: center;
     font-size: .8rem;
 }
 
 .led-wall-title h3 {
-    color: #fff;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
 .calculator {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    flex: 1;
-    display: inline;
-}
-
-.calculator img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    object-position: center center;
-    opacity: .5;
-}
-
-.calculator img:hover {
-    opacity: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/calc_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
 }
 
 .calculator-title {
-    position: absolute;
-    bottom: 7%;
-    left: 1%;
-    background-color: #777;
-    border: 2px solid black;
     padding: .5%;
     text-align: center;
     font-size: .8rem;
 }
 
 .calculator-title h3 {
-    color: #fff;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
+.puzzle {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/puzzle_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.puzzle-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.puzzle-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.run-buddy {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/run_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.run-buddy-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.run-buddy-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
 /* FOOTER */
 
