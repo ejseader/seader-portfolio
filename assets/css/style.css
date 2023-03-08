@@ -109,16 +109,16 @@ main {
 }
 
 section {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 20px 5%;
     display:flex;
     flex-direction: column;
-    align-items: start;
+    /* align-items: start; */
 }
 
 section h1 {
     padding-right: 10px;
-    border-bottom: 30px solid var(--site-orange);
+    border-bottom: 25px solid var(--site-orange);
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
@@ -126,8 +126,8 @@ section h1 {
 /* ABOUT ME */
 
 .section-title {
-    width: 100%;
     flex: 1;
+    width: 100%;
 }
 
 #aboutme-content {
@@ -316,40 +316,28 @@ section h1 {
 
 /* CONTACT */
 
-/* #contact {
-    width: 100%;
-} */
+#contact {
+    align-items: center;
+}
 
-.contact-content {
+#contact-content {
     flex: 4;
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr; */
     padding: 2%;
-    margin-top: 2%;
 }
 
 .contact-wrap {
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-wrap > a {
-    flex: 1;
     color: black;
-    padding: 10%;
     font-size: 1.4rem;
     font-weight: bold;
-}
-
-.phone {
-    flex: 2;
-}
-
-.email {
-    flex: 2;
-}
-
-.github {
-    flex: 2;
+    padding: 7px 0;
 }
 
 /* FOOTER */
@@ -365,5 +353,14 @@ footer {
 @media (min-width: 650px) {
     section {
         flex-direction: row;
+    }
+
+    .contact-wrap {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-wrap > a {
+        padding: 35px 0 15px;
     }
 }
