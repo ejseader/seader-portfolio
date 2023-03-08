@@ -191,7 +191,8 @@ section h1 {
     background-position: center center;
     background-size: cover;
     padding: 100px 0;
-    
+    border: 1px solid black;
+    opacity: .7;
 }
 
 .surf-report-title {
@@ -203,6 +204,10 @@ section h1 {
 .surf-report-title h3 {
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+.surf-report:hover {
+    opacity: 1;
 }
 
 .img-wrapper {
@@ -218,6 +223,8 @@ section h1 {
     background-position: center;
     background-size: cover;
     padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
 }
 
 .led-wall-title {
@@ -231,11 +238,17 @@ section h1 {
     font-weight: bold;
 }
 
+.led-wall:hover {
+    opacity: 1;
+}
+
 .calculator {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/calc_crop.jpg);
     background-position: center;
     background-size: cover;
     padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
 }
 
 .calculator-title {
@@ -249,11 +262,17 @@ section h1 {
     font-weight: bold;
 }
 
+.calculator:hover {
+    opacity: 1;
+}
+
 .puzzle {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/puzzle_crop.jpg);
     background-position: center;
     background-size: cover;
     padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
 }
 
 .puzzle-title {
@@ -267,11 +286,17 @@ section h1 {
     font-weight: bold;
 }
 
+.puzzle:hover {
+    opacity: 1;
+}
+
 .run-buddy {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/run_crop.jpg);
     background-position: center;
     background-size: cover;
     padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
 }
 
 .run-buddy-title {
@@ -283,6 +308,48 @@ section h1 {
 .run-buddy-title h3 {
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+.run-buddy:hover {
+    opacity: 1;
+}
+
+/* CONTACT */
+
+/* #contact {
+    width: 100%;
+} */
+
+.contact-content {
+    flex: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.contact-wrap {
+    display: flex;
+}
+
+.contact-wrap > a {
+    flex: 1;
+    color: black;
+    padding: 10%;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.phone {
+    flex: 2;
+}
+
+.email {
+    flex: 2;
+}
+
+.github {
+    flex: 2;
 }
 
 /* FOOTER */
