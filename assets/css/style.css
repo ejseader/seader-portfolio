@@ -1,0 +1,366 @@
+:root {
+    --site-orange: #f26419;
+}
+
+/* RESETS */
+* {
+    Font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #86bbd8;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* GLOBAL CLASSES */
+
+.text-content {
+    text-align: center;
+}
+
+hr {
+    margin: 1.5em 0;
+    text-align: center;
+    border: none;
+  }
+  
+  hr:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #777;
+    margin: 0 0.4em;
+  }
+  
+  hr:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #777;
+    margin: 0 0.4em;
+  }
+
+
+/* CUSTOM STYLES */
+
+/* HEADER */
+
+header {
+    background-color: black;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    position: relative;
+}
+
+header nav a:not(last-child) {
+    margin-right: 10px;
+}
+
+header .eric a {
+    color: var(--site-orange);
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+header nav a:hover {
+    color: var(--site-orange);
+}
+
+/* CONTENT */
+
+main {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 2%;
+}
+
+section {
+    /* margin: 0 auto; */
+    padding: 20px 5%;
+    display:flex;
+    flex-direction: column;
+    /* align-items: start; */
+}
+
+section h1 {
+    padding-right: 10px;
+    border-bottom: 25px solid var(--site-orange);
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+/* ABOUT ME */
+
+.section-title {
+    flex: 1;
+    width: 100%;
+}
+
+#aboutme-content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    /* display: flex; */
+    width: 100px;
+    height: 100px;
+    background-image: url('https://ericseader.com/static/assets/img/profile.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center center;
+    border: 5px solid var(--site-orange);
+    border-radius: 50%;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.aboutme-text {
+    /* display: flex; */
+    flex: 3;
+    padding: 2%;
+    justify-content: start;
+    align-items: center;
+}
+
+/* WORK */
+
+#work {
+    width: 100%;
+}
+
+#work-content {
+    flex: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 2%;
+    /* margin-left: 17%; */
+    margin-top: 2%;
+}
+
+.img-wrapper-lg {
+    display: flex;
+}
+
+.img-wrapper-lg > a {
+    flex: 1;
+}
+
+.surf-report {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/surfing-gdfe5085a3_1280.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.surf-report-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.surf-report-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.surf-report:hover {
+    opacity: 1;
+}
+
+.img-wrapper {
+    display: flex;
+}
+
+.img-wrapper > a {
+    flex: 1;
+}
+
+.led-wall {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/led_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.led-wall-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.led-wall-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.led-wall:hover {
+    opacity: 1;
+}
+
+.calculator {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/calc_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.calculator-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.calculator-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.calculator:hover {
+    opacity: 1;
+}
+
+.puzzle {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/puzzle_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.puzzle-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.puzzle-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.puzzle:hover {
+    opacity: 1;
+}
+
+.run-buddy {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/run_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.run-buddy-title {
+    padding: .5%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.run-buddy-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.run-buddy:hover {
+    opacity: 1;
+}
+
+/* CONTACT */
+
+#contact {
+    align-items: center;
+}
+
+#contact-content {
+    flex: 4;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    padding: 2%;
+}
+
+.contact-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-wrap > a {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 7px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px 5%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 650px) {
+    section {
+        flex-direction: row;
+    }
+
+    .contact-wrap {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-wrap > a {
+        padding: 35px 0 15px;
+    }
+}
