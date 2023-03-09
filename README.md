@@ -1,4 +1,4 @@
-# Eric Seader/s Portfolio
+# Eric Seader's Portfolio
 
 ## Site Description
 
