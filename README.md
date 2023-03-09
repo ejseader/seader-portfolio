@@ -2,7 +2,7 @@
 
 ## Site Description
 
-Designed with mobile-first methodology, this responsive site is intended to showcase the class projects completed by Eric Seader as part of Rutgers University's Full Stack Web Development Bootcamp. 
+Designed with mobile-first methodology, this responsive site is intended to showcase the class projects that will be completed by Eric Seader as part of Rutgers University's Full Stack Web Development Bootcamp. 
 
 ## Sections
 
@@ -13,7 +13,7 @@ Designed with mobile-first methodology, this responsive site is intended to show
         This section has a brief description about Eric's professional history.
 
     ## Work
-        This section features five projects completed by Eric as part of the bootcamp, with titles denoting the project name and coding languages used.
+        This section features five projects that will be completed by Eric as part of the bootcamp, with titles denoting the project names and coding languages used.
 
     ## Contact
         This section features a phone number, email address, and GitHub links, each which trigger the corresponding program (phone number triggers default calling app, email triggers default mail client, and GitHub opens Eric's GitHub page in a separate browser tab).
