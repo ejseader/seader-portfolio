@@ -139,7 +139,6 @@ section h1 {
 }
 
 .avatar {
-    /* display: flex; */
     width: 100px;
     height: 100px;
     background-image: url('https://ericseader.com/static/assets/img/profile.png');
@@ -153,7 +152,6 @@ section h1 {
 }
 
 .aboutme-text {
-    /* display: flex; */
     flex: 3;
     padding: 2%;
     justify-content: start;
@@ -170,11 +168,7 @@ section h1 {
     flex: 4;
     display: grid;
     grid-template-columns: 1fr;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     padding: 2%;
-    /* margin-left: 17%; */
     margin-top: 2%;
 }
 
@@ -195,13 +189,13 @@ section h1 {
     opacity: .7;
 }
 
-.surf-report-title {
+.work-content-title {
     padding: .5%;
     text-align: center;
     font-size: .8rem;
 }
 
-.surf-report-title h3 {
+.work-content-title h3 {
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -218,8 +212,7 @@ section h1 {
     flex: 1;
 }
 
-.led-wall {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/led_crop.jpg);
+.work-content-img {
     background-position: center;
     background-size: cover;
     padding: 30px 0;
@@ -227,91 +220,24 @@ section h1 {
     opacity: .7;
 }
 
-.led-wall-title {
-    padding: .5%;
-    text-align: center;
-    font-size: .8rem;
-}
-
-.led-wall-title h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.led-wall:hover {
+.work-content-img:hover {
     opacity: 1;
+}
+
+.led-wall {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/led_crop.jpg);
 }
 
 .calculator {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/calc_crop.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 30px 0;
-    border: 1px solid black;
-    opacity: .7;
-}
-
-.calculator-title {
-    padding: .5%;
-    text-align: center;
-    font-size: .8rem;
-}
-
-.calculator-title h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.calculator:hover {
-    opacity: 1;
 }
 
 .puzzle {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/puzzle_crop.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 30px 0;
-    border: 1px solid black;
-    opacity: .7;
-}
-
-.puzzle-title {
-    padding: .5%;
-    text-align: center;
-    font-size: .8rem;
-}
-
-.puzzle-title h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.puzzle:hover {
-    opacity: 1;
 }
 
 .run-buddy {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url(../images/run_crop.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 30px 0;
-    border: 1px solid black;
-    opacity: .7;
-}
-
-.run-buddy-title {
-    padding: .5%;
-    text-align: center;
-    font-size: .8rem;
-}
-
-.run-buddy-title h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.run-buddy:hover {
-    opacity: 1;
 }
 
 /* CONTACT */
@@ -322,8 +248,6 @@ section h1 {
 
 #contact-content {
     flex: 4;
-    /* display: grid;
-    grid-template-columns: 1fr; */
     padding: 2%;
 }
 
@@ -339,6 +263,7 @@ section h1 {
     font-weight: bold;
     padding: 7px 0;
 }
+
 
 /* FOOTER */
 
